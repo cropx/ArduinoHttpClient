@@ -340,11 +340,11 @@ protected:
 
     // Number of milliseconds that we wait each time there isn't any data
     // available to be read (during status code and header processing)
-    static const int kHttpWaitForDataDelay = 1000;
+    static const int kHttpWaitForDataDelay = 10;
     // Number of milliseconds that we'll wait in total without receiveing any
     // data before returning HTTP_ERROR_TIMED_OUT (during status code and header
     // processing)
-    static const int kHttpResponseTimeout = 30*1000;
+    static const int kHttpResponseTimeout = 10*1000;
     static const char* kContentLengthPrefix;
     static const char* kTransferEncodingChunked;
     typedef enum {
